@@ -1,0 +1,607 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form, input, textarea, select, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a global font family and background image */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b7c0ee;
+  background-image: url('wallpaper1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+  background-color: #0b1d51;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f28500;
+}
+
+.logo {
+  width: 15%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  height: auto;
+}
+
+.login-register {
+  display: flex;
+  align-items: center;
+}
+
+.login-button0 {
+  text-decoration: none;
+  background-color: #f28500;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-left: auto;
+}
+
+.login-button0:hover {
+  background-color: #ff9900;
+}
+
+/* Survey page styles */
+.survey-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tab-container {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  margin: 5px;
+}
+
+.radio-group {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin: 10px;
+}
+
+.skills-tab {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  }
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.skills-list li {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button[type="submit"] {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff990090;
+}
+
+.navbar a.active {
+  color: #ff9900;
+}
+
+/* Add this CSS to style the right content */
+.left-content {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 20px;
+}
+
+.left-image {
+  width: 100%;
+  height: auto;
+}
+
+.padd {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Add this CSS to style the login form */
+.login-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-form label {
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form button[type="submit"] {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #e68900;
+}
+
+.login-button {
+  text-decoration: none;
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 80px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-left: auto;
+}
+
+.login-button:hover {
+  background-color: #e68900;
+}
+
+/* Add this CSS to create space between buttons and center them vertically */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* CSS for the Tinder-like match square */
+.match-square {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  color: #F28500;
+  position: relative;
+  z-index: 2;
+  bottom:100px;
+}
+
+.match-content {
+  text-align: center;
+}
+
+/* CSS for the circles with icons */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 105%;
+  right: 80%;
+}
+
+/* Style for the "x" and checkmark */
+.icon {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark-circle {
+  background-color: green;
+}
+
+.preview-square {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 4%;
+  color: #F28500;
+  position: absolute;
+  top: 5.5%;
+  left: 63%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+  z-index: 1;
+  margin-top: 10%;
+  
+}
+
+.preview-square2 {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 4%;
+  color: #F28500;
+  position: absolute;
+  top: 5.5%;
+  left: 36%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+  z-index: 1;
+  margin-top: 10%;
+}
+
+/* CSS for the circles in the preview */
+.preview-square .circle {
+  top: 105%;
+  right: 80%;
+}
+
+/* CSS for the icon in the preview */
+.preview-square .icon {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.padd1{
+  margin-top: 10%;
+}
+
+/* Update the button styles to round the corners */
+.my-button {
+  background-color: #F28500;
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+/* Hover state */
+.my-button:hover {
+  background-color: #c26b00;
+}
+
+/* Active (pressed) state */
+.my-button:active {
+  background-color: #995400;
+}
+
+/* Red state */
+.my-button.red {
+  background-color: #784200;
+}
+
+.container3 {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 70px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container3 h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container3 p {
+  margin-bottom: 50px;
+}
+
+.container3 ul {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.container3 ul li {
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-top:50px;
+  background-color: #0b1d51;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.header6 {
+	width: 500px;
+	margin-left: auto;
+        margin-right: auto;
+}
+
+.landing-page{
+	background-color: #fe9b6a;
+	padding: 5%;
+  margin-top: -3%;
+
+}
+
+
+.header__title {
+    color: white;
+    font-size: 40px;
+    text-align: left; /* Align the text to the left */
+}
+
+.header__sub-title {
+    color: white;
+    font-size: 30px;
+    text-align: left; /* Align the text to the left */
+    padding-top: 20px;
+}
+
+.iphone-img{
+    width: 400px;
+}
+.red{
+    color: rgb(147, 16, 16);
+}
+
+.green{
+    color: green;
+}
+
+.container6 {
+    padding: 50px 0;
+    width: 100%;
+  }
+  
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.profile-examples{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-info{
+    background-color: rgb(144, 144, 223);
+    height: 100vh;
+}
+.title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.profile-pic{
+    width: 400px;
+    height: auto; 
+    margin-right: 20px;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease; 
+}
+.circular-box {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.welcome-text {
+    font-size: 24px; 
+    color: rgb(248, 242, 242); 
+    text-align: left; 
+    padding-top: 20px;
+}
+
+.projects-view{
+    background-color: rgb(35, 35, 114); 
+}
+
+.project-examples{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.project-profile{
+    width: 450px;
+}
+
+.index-project{
+    margin: 5px;
+    background-color: rgb(234, 228, 228);
+    border-radius: 20px;
+    padding: 25px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.index-project:hover {
+    transform: scale(1.05); 
+    background-color: rgb(224, 218, 218); 
+    cursor: pointer;
+}
+
+.project-index-description{
+    font-size: 20px;
+    color: black;
+}
+
+.header__button {
+    text-align: left; 
+    padding-top: 20px; 
+}
+
+.red-button {
+    font-size: 20px;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    background-color: rgb(147, 16, 16);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+    background-color: rgb(207, 51, 51); 
+    cursor: pointer;
+}

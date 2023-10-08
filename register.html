@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="Pics/winder-logos_white2.png" alt="Logo" class="logo">
+            <div class="nav">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About_us.html">About us</a></li>
+                        <li><a href="swipe.html">Swipe</a></li>
+                        <li><a href="Survey.html">Create project</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-register">
+                <a href="Login_reg.html" class="login-button0">Login/Register</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="survey-container">
+        <h1>Register</h1>
+
+        <div class="tab-container">
+            <div class="form-group">
+                <label for="projectCreator">Name</label>
+                <input type="text" id="projectCreator" name="projectCreator" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Email</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Phone number</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="projectName">Age</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Nationality</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Field of study</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Location</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectDescription">Description</label>
+                <textarea id="projectDescription" name="projectDescription" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Project 1</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Project 2</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Project 3</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience</label>
+                <select id="experience" name="experience">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="projectName">Upload Picture</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+            
+        </div>
+        <div class="vertical-line"></div>
+
+        <div class="skills-tab">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <button class="my-button">Skill 1</button>
+                <button class="my-button">Skill 2</button>
+                <button class="my-button">Skill 3</button>
+                <button class="my-button">Skill 4</button>
+                <button class="my-button">Skill 5</button>
+                <button class="my-button">Skill 6</button>
+                <button class="my-button">Skill 7</button>
+                <button class="my-button">Skill 8</button>
+                <button class="my-button">Skill 9</button>
+
+            </ul>
+        </div>
+        <!-- Add the script just before the closing </body> tag -->
+        <script>
+            // Get all the skill buttons
+            const skillButtons = document.querySelectorAll(".my-button");
+
+            // Add a click event listener to each skill button
+            skillButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    // Toggle the background color by adding or removing the "red" class
+                    button.classList.toggle("red");
+                });
+            });
+        </script>
+</body>
+
+<button type="submit" id="submitButton">Submit</button>
+
+<script>
+    // Get the "Submit" button by its ID
+    const submitButton = document.getElementById("submitButton");
+
+    // Function to redirect to "thanks.html"
+    function redirectToThanksPage() {
+        window.location.href = "thanks.html";
+    }
+
+    // Add a click event listener to the "Submit" button
+    submitButton.addEventListener("click", redirectToThanksPage);
+</script>
+<div class="footer">
+    &copy; 2023 Winder
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Page</title>
+</head>
+    <header>
+        <div class="container">
+            <img src="Pics/winder-logos_white2.png" alt="Logo" class="logo">
+            <div class="nav">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About_us.html">About us</a></li>
+                        <li><a href="swipe.html">Swipe</a></li>
+                        <li><a href="Survey.html">Create project</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-register">
+                <a href="Login_reg.html" class="login-button0">Login/Register</a>
+            </div>
+        </div>
+    </header>
+    <div class="login-form">
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="buttons-container">
+                <button type="submit">Login</button>
+            </div>
+            <!-- Separate div for the Register button -->
+            <div class="buttons-container">
+                <!-- Anchor element for "Register123" -->
+                <a href="register.html" class="login-button">Register</a>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        &copy; 2023 Winder
+    </div>
+</body>
+</html>
